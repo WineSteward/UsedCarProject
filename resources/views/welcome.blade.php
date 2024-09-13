@@ -22,16 +22,16 @@
             <x-section-heading>Marcas</x-section-heading>
             
             <div class="mt-6">
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>
-                <x-tag>Marca Do Carro</x-tag>    
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>
+                <x-tag>Marca</x-tag>    
             </div>
 
         </section>

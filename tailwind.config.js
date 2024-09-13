@@ -13,6 +13,10 @@ export default {
       fontFamily:
       {
         "hanken-grotesk": ["Hanken Grotesk", "sans-serif"]
+      },
+      fontSize:
+      {
+        "xxs": "10px"
       }
     },
   },
