@@ -6,27 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+
     <title>Usados&Roubados</title>
 </head>
-<body>
-    <div>
-        <nav>
-            <div>
+<body class="bg-black text-white">
+    <div class="px-5">
+        <nav class="flex justify-between items-center border-b border-white/10">
+            <div class="py-5">
                 <a href="">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
                 </a>
                 By <a target="_blank" href="https://icons8.com">Icons8</a>
             </div>
-            <div>
-                links
+
+            <div class="space-x-6 font-bold">
+                <a href="">Carros</a>
+                <a href="">Opcionais<s</a>
+                <a href="">#Salarios#</a>
+                <a href="">Stands</a>
             </div>
             <div>
-                Post a job
+                <a href="">Anunciar o seu carro</a>
             </div>
         </nav>
 
-        <main>
+        <main class="mt-10 max-w[986px] mx-auto">
           {{ $slot }}  
         </main>
 
