@@ -21,7 +21,7 @@
         <section>
             <x-section-heading>Marcas</x-section-heading>
             
-            <div class="mt-6 space-x-1">
+            <div class="mt-6">
                 <x-tag>Marca Do Carro</x-tag>
                 <x-tag>Marca Do Carro</x-tag>
                 <x-tag>Marca Do Carro</x-tag>
@@ -38,6 +38,15 @@
     
         <section>
             <x-section-heading>Acabadinhos de sair do forno</x-section-heading>
+
+            <div class="mt-6 space-y-6">
+                <x-car-card-extended></x-car-card-extended>
+
+                <x-car-card-extended></x-car-card-extended>
+
+                <x-car-card-extended></x-car-card-extended>
+            </div>
+
         </section>
     </div>
 </x-layout>

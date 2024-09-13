@@ -1,0 +1,1 @@
+<img src="http://placehold.it/100/100" class="rounded-xl" alt="">

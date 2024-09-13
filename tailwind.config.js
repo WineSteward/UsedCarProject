@@ -6,8 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+      colors: 
+      {
         "black" : '#060606'
+      },
+      fontFamily:
+      {
+        "hanken-grotesk": ["Hanken Grotesk", "sans-serif"]
       }
     },
   },
