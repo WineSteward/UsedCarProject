@@ -7,8 +7,8 @@
     </div>
     
     <div class="flex justify-center mt-auto">
-        <a href="" class="bg-white/20 rounded-xl px-2 py-1 m-2 text-xs hover:bg-white/50 transition-colors duration-300">Ar Condicionado</a>
-        <a href="" class="bg-white/20 rounded-xl px-2 py-1 m-2 text-xs hover:bg-white/50 transition-colors duration-300">Volante</a>
-        <a href="" class="bg-white/20 rounded-xl px-2 py-1 m-2 text-xs hover:bg-white/50 transition-colors duration-300">Travão</a>
+        <x-tag>Travões Funcionais</x-tag>
+        <x-tag>Vidros Não Partidos</x-tag>
+        <x-tag>Pneus Carecas</x-tag>
     </div>
 </div>
