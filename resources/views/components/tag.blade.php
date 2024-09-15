@@ -2,19 +2,19 @@
 
 @php
 
-$classes = 'bg-white/20 m-2 rounded-xl bold hover:bg-white/50 transition-colors duration-300';
+    $classes = 'bg-white/20 m-2 rounded-xl bold hover:bg-white/50 transition-colors duration-300';
 
-if ($size == 'base')
-{
-    $classes .= ' px-5 py-1 text-sm ';
-}
-elseif ($size == "small") 
-{
-    $classes .= ' px-2 py-1 text-xxs ';
-}
-
+    if ($size == 'base')
+    {
+        $classes .= ' px-5 py-1 text-sm ';
+    }
+    else 
+    {
+        $classes .= ' px-2 py-1 text-xxs ';
+    }
 @endphp
 
-<a class="{{ $classes }}" href="#">
-    {{$slot}}
-</a>
+<button class="{{ $classes }}">
+    {{ $slot }}
+</button>
+

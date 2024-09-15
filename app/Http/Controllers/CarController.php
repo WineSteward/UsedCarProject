@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Car;
 use App\Http\Requests\StoreCarRequest;
 use App\Http\Requests\UpdateCarRequest;
+use App\Models\Brand;
+use App\Models\Tag;
 
 class CarController extends Controller
 {
@@ -13,7 +15,12 @@ class CarController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('car/index', [
+            'cars' => Car::all(),
+            'tags' => Tag::all(),
+            'brands' => Brand::all()
+        ]);
     }
 
     /**

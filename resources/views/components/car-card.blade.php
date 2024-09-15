@@ -1,3 +1,5 @@
+@props(['tags'])
+
 <x-panel class="bg-[url('https://picsum.photos/seed/10/450/250')] flex flex-col text-center ">    
     
     <div class="self-start text-sm">
@@ -11,10 +13,10 @@
     </div>
     
     <div class="flex justify-center mt-auto">
-        <x-tag>Travões Funcionais</x-tag>
     
-        <x-tag>Vidros Não Partidos</x-tag>
-    
-        <x-tag>Pneus Carecas</x-tag>
+        @foreach ($tags as $tag)
+            <x-tag>{{$tag->name}}</x-tag>
+        @endforeach
+
     </div>
 </x-panel>

@@ -1,27 +1,30 @@
+@props(['car', 'tags'])
+
 <x-panel class="flex gap-x-6">
     <div>
         <x-stand-logo></x-stand-logo>
     </div>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col flex-1">
     
         <a href="#" class="self-start text-sm text-gray-500">
-            Nome do Stand
+            {{$car->stand->name}}
         </a>
 
-        <h3 class="font-bold text-lg group-hover:text-blue-500 transition-colors duration-300">Modelo e Marca do Carro</h3>
+        <h3 class="font-bold text-lg group-hover:text-blue-500 transition-colors duration-300">{{ $car->model_name . " - " . $car->brand->name}}</h3>
 
-        <p class="text-sm text-gray-500 mt-auto">Preço do Carro</p>
+        <p class="text-sm text-gray-500 mt-auto">{{ $car->price . "€"}}</p>
 
     </div>
     
-    <div class="flex-1 flex px-10">
+    <div class=" flex px-10">
         <img src="https://picsum.photos/seed/10/400/100" class="rounded-xl" alt="">
     </div>
 
-    <div>
-        <x-tag>Travões Funcionais</x-tag>
-        <x-tag>Vidros Não Partidos</x-tag>
-        <x-tag>Pneus Carecas</x-tag>
+    <div class="grid grid-cols-4">
+        @foreach ($car->tags as $tag)
+            <x-tag size="small">{{ $tag->name }}</x-tag>        
+        @endforeach
     </div>
+
 </x-panel>
