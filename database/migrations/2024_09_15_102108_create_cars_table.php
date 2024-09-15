@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignIdFor(Brand::class);
             $table->foreignIdFor(Stand::class);
-            $table->string('model');            
+            $table->string('model_name');
             $table->string('image'); //path to the image
             $table->string('price');
             $table->string('url'); //path to the stand website
